@@ -20,7 +20,7 @@ function setup(){
 	road.scale = 4;
 	road.velocityY = 6;
 	road.y = road.height/2;
-	ouch = loadSound("ouch.mp3");
+	ouch = loadSound("ouch1.mp3");
 	gameOver = loadSound("gameOver.mp3");
 	win = loadSound("win1.mp3");
 	PC1 = new PC(260,500);
