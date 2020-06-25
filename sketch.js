@@ -37,7 +37,7 @@ function draw(){
 
 	textSize(33);
 	fill(rgb(64, 250, 18));
-	text("Score: " + score, 650, 60);
+	text("Score: " + score, 645, 60);
 
 	PC1.display();
 
@@ -51,7 +51,7 @@ function draw(){
 
 	if (World.frameCount % 200 === 0)	NPC1.push(new NPC(random(0, width-80),-20));
 
-	for (var i = 0;i<NPC1.length ;i++){
+	for (var i = 0;i < NPC1.length ;i++){
 		NPC1[i].display();
 		NPC1[i].move();
 

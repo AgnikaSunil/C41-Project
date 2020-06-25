@@ -17,8 +17,17 @@ class NPC {
 	}
 
 	collide(PC1){
-		if(PC1.x < this.x + this.w && PC1.x + PC1.w > this.x)
-			if(PC1.y < this.y + this.h && PC1.y + PC1.h > this.y)  return true;		
+		var NPC1LeftEdge = this.x + this.w;
+		var PC1LeftEdge = PC1.x + PC1.w;
+		var NPC1TopEdge = this.y + this.h;
+		var PC1TopEdge = PC1.y + PC1.h;
+
+		var PC1RightEdge = PC1.x;
+		var NPC1RightEdge = this.x;
+		var PC1BottomEdge = PC1.y;
+		var NPC1BottomEdge = this.y;
+		if(PC1RightEdge < NPC1LeftEdge && PC1LeftEdge > NPC1RightEdge)
+			if(PC1BottomEdge < NPC1TopEdge && PC1TopEdge > NPC1BottomEdge)  return true;		
 	}
 
 	continue(){
