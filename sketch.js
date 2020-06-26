@@ -1,6 +1,7 @@
 //Declaring global variables
 var road;
-var PC1,NPC1;
+var PC1;
+var NPC1 =[];
 
 var score = 0;
 var userLives = 5;
