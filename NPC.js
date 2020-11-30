@@ -26,7 +26,8 @@ class NPC {
 	//Defining move function
 	move (){
 		//Incrementing it's y by 4.2
-		this.y += 4.2;
+		// you can make this number higher or lower based on skill
+		this.y += 6;
 	}
 
 	//Defining collide function that has PC1 as it's argument
